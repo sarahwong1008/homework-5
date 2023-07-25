@@ -9,7 +9,7 @@
 
 get_oldest_player <- function(year) {
   # Filter the dataset to get the players' data for the specified year
-  players_in_year <- subset(nba_data, Year == year)
+  players_in_year <- subset(data, Year == year)
   
   if (nrow(players_in_year) == 0) {
     # No player data found for the given year
