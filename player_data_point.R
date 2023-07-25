@@ -10,7 +10,7 @@
 
 get_player_data_point <- function(year, player) {
   # Filter the dataset to get the data point for the specified player in the given year
-  player_data_point <- subset(player_data, Player == player & Year == year)
+  player_data_point <- subset(data, Player == player & Year == year)
   
   if (nrow(player_data_point) == 0) {
     # Player data not found for the given year
